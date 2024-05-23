@@ -35,4 +35,11 @@ For local mount directory: docker container create --name mongoserver1 -p 27017:
 
 =====================================================================
 
-Masuk ke container: docker excec -t -i [container] [script]
+docker network create java_network
+docker network ls
+Connect Network: docker network connect java_network mongo
+docker container inspect mongo
+
+=====================================================================
+
+Masuk ke container: docker exec -t -i [container] [script]
