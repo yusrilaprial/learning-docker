@@ -40,6 +40,18 @@ docker network ls
 Connect Network: docker network connect java_network mongo
 docker container inspect mongo
 
+to acces host machine form container: host.docker.internal
+
 =====================================================================
 
 Masuk ke container: docker exec -t -i [container] [script]
+
+Masuk ke bash contaner: docker exec -it <container_name> bash
+
+=====================================================================
+
+Clear Cache Docker:
+docker image prune
+docker container prune
+docker volume prune
+docker builder prune
